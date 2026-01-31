@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url(bg.jpg);
+
+}
+.bg>nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    padding-left: 100px;
+    padding-right: 100px;
+    position: fixed;
+}
+.n_left{
+    color: white;
+    font-style: italic;
+}
+.n_right{
+    display: flex;
+    gap: 20px;
+}
+.n_right>a{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+.n_right>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #b96bc6;
+    transition: 0.8s ease;
+}
+
+.n_right>a:hover {
+    color: #b96bc6;
+}
+
+.n_right>a:hover::after {
+    width: 100%;
+}
+
+.bg>main{
+    display: flex;
+    gap: 100px;
+    padding-top: 10vh;
+    
+    
+}
+.m_left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    padding-top: 150px;
+    padding-left: 100px;
+    font-size: 22px;
+    color: white;
+}
+.m_left>h1>span{
+    color: #b96bc6;
+}
+#lr{
+    color: #b96bc6;
+    margin-top: 30px;
+}
+.m_right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 50px;
+
+}
+.bg>section{
+    display: flex;
+    gap: 100px;
+}
+.s_left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    padding-top: 70px;
+    padding-left: 100px;
+    font-size: 20px;
+    color: white;
+}
+.s_left>h1{
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.s_right{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding-top: 70px;
+    padding-right: 100px;
+
+}
+.s_right>img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+
+}
+.link{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+footer{
+    height: 7vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #0b0416;
+
+}
+span{
+    color: #b96bc6;
+}
+a>img{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+a>img:hover{
+    transform: scale(1.2);
+}
