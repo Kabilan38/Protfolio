@@ -3,13 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-.bg{
+
+body{
     width: 100%;
     height: 100%;
     background-image: url(bg.jpg);
 
 }
-.bg>nav{
+
+nav{
     height: 10vh;
     width: 100%;
     display: flex;
@@ -19,15 +21,19 @@
     padding-left: 100px;
     padding-right: 100px;
     position: fixed;
+    top: 0;
 }
+
 .n_left{
     color: white;
     font-style: italic;
 }
+
 .n_right{
     display: flex;
     gap: 20px;
 }
+
 .n_right>a{
     font-size: 20px;
     font-weight: bold;
@@ -38,6 +44,7 @@
     position: relative;
 
 }
+
 .n_right>a::after {
     content: "";
     position: absolute;
@@ -57,87 +64,102 @@
     width: 100%;
 }
 
-.bg>main{
+main{
+    height: 90vh;
+    width: 100%;
     display: flex;
-    gap: 100px;
-    padding-top: 10vh;
-    
-    
+    margin-top: 10vh; 
+   
 }
+
 .m_left{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
-    padding-top: 150px;
+    height: 90%;
     padding-left: 100px;
+    padding-top: 100px;
     font-size: 22px;
     color: white;
 }
+
 .m_left>h1>span{
     color: #b96bc6;
 }
+
 #lr{
     color: #b96bc6;
     margin-top: 30px;
 }
+
 .m_right{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50%;
-    padding-top: 50px;
-
+    height: 90%;
 }
-.bg>section{
+
+section{
     display: flex;
     gap: 100px;
+    height: 45vh;
+    width: 100%;
 }
+
 .s_left{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 70%;
-    padding-top: 70px;
     padding-left: 100px;
     font-size: 20px;
     color: white;
 }
+
 .s_left>h1{
     text-align: center;
     padding-bottom: 30px;
-
 }
 
 .s_right{
     display: flex;
     justify-content: center;
     width: 30%;
-    padding-top: 70px;
+    margin-top: 40px;
     padding-right: 100px;
-
 }
+
 .s_right>img{
     border-radius: 50%;
     width: 300px;
     height: 300px;
 }
+
 .last{
+    width: 100%;
+    height: 170px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-top: 100px;
     color: white;
     text-align: center;
-
 }
+
 .link{
+    width: 100%;
+    height: 70px;
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 15px;
 }
+
 footer{
     height: 7vh;
+    width: 100%;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -145,15 +167,18 @@ footer{
     padding-left: 100px;
     padding-right: 100px;
     background-color: #0b0416;
-
 }
+
 span{
     color: #b96bc6;
 }
+
 a>img{
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 a>img:hover{
     transform: scale(1.2);
 }
+
